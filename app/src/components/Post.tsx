@@ -1,6 +1,8 @@
 import { Image } from 'expo-image';
 import { StyleSheet, Text, View } from 'react-native';
 
+import PostActions from '@/components/PostActions';
+
 type PostProps = {
   username: string;
   imageUrl: string;
@@ -18,6 +20,7 @@ export default function Post({ username, imageUrl, imageDescription, caption }: 
         <Text style={styles.username}>{username}</Text>
       </View>
       <Image source={{ uri: imageUrl }} style={styles.image} contentFit="cover" accessibilityLabel={imageDescription} />
+      <PostActions />
       <Text style={styles.caption}>
         <Text style={styles.username}>{username} </Text>{caption}
       </Text>
