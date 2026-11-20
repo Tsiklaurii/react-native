@@ -28,7 +28,7 @@ const styles = StyleSheet.create({
     borderTopColor: '#eee',
     paddingVertical: 8,
   },
-  item: { flex: 1, alignItems: 'center', justifyContent: 'center' },
+  item: { flex: 1, height: 48, alignItems: 'center', justifyContent: 'center' },
   symbol: { fontSize: 24, color: '#262626' },
   profile: { fontSize: 30, color: '#000' },
   label: { fontSize: 10, color: '#262626' },

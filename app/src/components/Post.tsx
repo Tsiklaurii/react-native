@@ -29,11 +29,11 @@ export default function Post({ username, imageUrl, imageDescription, caption }: 
 }
 
 const styles = StyleSheet.create({
-  container: { paddingBottom: 16 },
+  container: { paddingBottom: 16, borderBottomWidth: 1, borderBottomColor: '#eee' },
   header: { flexDirection: 'row', alignItems: 'center', gap: 10, padding: 12 },
   avatar: { width: 36, height: 36, borderRadius: 18, backgroundColor: '#eac6b9', alignItems: 'center', justifyContent: 'center' },
   avatarText: { fontWeight: '600', color: '#333' },
   username: { fontWeight: 'bold', color: '#262626' },
   image: { width: '100%', aspectRatio: 1, backgroundColor: '#eee' },
-  caption: { paddingHorizontal: 12, paddingTop: 12, color: '#262626' },
+  caption: { paddingHorizontal: 12, paddingTop: 8, color: '#262626' },
 });
